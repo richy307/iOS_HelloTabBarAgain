@@ -10,7 +10,11 @@ import UIKit
 class NewViewController: UIViewController {
     
     
-
+    @IBOutlet weak var myTextInput: UITextField!
+    
+    @IBAction func ok(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
