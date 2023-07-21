@@ -15,16 +15,18 @@ class NewViewController: UIViewController {
     @IBAction func ok(_ sender: UIButton) {
         if let inputText = myTextInput.text {
             print(inputText)
+            myTextInput.text = ""
+            myTextInput.resignFirstResponder() // 讓鍵盤掉下去的方法
+            
+            // 取得 第一個ViewController 的屬性
+            if let firstViewController = self.tabBarController?.viewControllers?[0] as? ViewController {
+                firstViewController.myLabel.text = inputText
+            }
         }
-        
-        myTextInput.text = ""
-        myTextInput.resignFirstResponder() // 讓鍵盤掉下去的方法
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         myTextInput.becomeFirstResponder()
     }
     
