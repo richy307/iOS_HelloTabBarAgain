@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Show Text-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_HelloTabBarAgain" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <constraint firstItem="fq8-Lr-gYx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sqa-dN-7G6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="37t-xg-5y8"/>
+                    <tabBarItem key="tabBarItem" title="Show Text" image="text" id="37t-xg-5y8"/>
                     <connections>
                         <outlet property="myLabel" destination="fq8-Lr-gYx" id="BDH-LE-1E0"/>
                     </connections>
@@ -42,7 +42,7 @@
             </objects>
             <point key="canvasLocation" x="-250" y="708"/>
         </scene>
-        <!--Item-->
+        <!--Input Text-->
         <scene sceneID="KGh-lK-GCs">
             <objects>
                 <viewController id="Po1-g2-bhx" customClass="NewViewController" customModule="iOS_HelloTabBarAgain" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,7 +76,7 @@
                             <constraint firstItem="Cvc-7u-JdT" firstAttribute="top" secondItem="eP9-VU-5D4" secondAttribute="bottom" constant="40" id="y4h-ic-z1u"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ki2-4L-g8i"/>
+                    <tabBarItem key="tabBarItem" title="Input Text" image="input" id="ki2-4L-g8i"/>
                     <connections>
                         <outlet property="myTextInput" destination="eP9-VU-5D4" id="Pt3-Rh-EIm"/>
                     </connections>
@@ -104,4 +104,8 @@
             <point key="canvasLocation" x="100" y="-29"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="input" width="32" height="32"/>
+        <image name="text" width="32" height="32"/>
+    </resources>
 </document>
