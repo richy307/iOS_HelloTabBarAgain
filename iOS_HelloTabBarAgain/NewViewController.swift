@@ -24,6 +24,8 @@ class NewViewController: UIViewController {
             if let firstViewController = self.tabBarController?.viewControllers?[0] as? ViewController {
                 firstViewController.myLabel.text = inputText
             }
+            
+            self.tabBarController?.selectedIndex = 0 // 直接跳到指定頁面
         }
     }
     
