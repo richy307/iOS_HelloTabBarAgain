@@ -13,12 +13,19 @@ class NewViewController: UIViewController {
     @IBOutlet weak var myTextInput: UITextField!
     
     @IBAction func ok(_ sender: UIButton) {
+        if let inputText = myTextInput.text {
+            print(inputText)
+        }
+        
+        myTextInput.text = ""
+        myTextInput.resignFirstResponder() // 讓鍵盤掉下去的方法
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        myTextInput.becomeFirstResponder()
     }
     
 
