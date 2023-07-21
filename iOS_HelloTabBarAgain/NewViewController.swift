@@ -9,10 +9,12 @@ import UIKit
 
 class NewViewController: UIViewController {
     
+    var messageFromViewOne: String?
     
     @IBOutlet weak var myTextInput: UITextField!
     
     @IBAction func ok(_ sender: UIButton) {
+        
         if let inputText = myTextInput.text {
             print(inputText)
             myTextInput.text = ""
@@ -27,7 +29,8 @@ class NewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myTextInput.becomeFirstResponder()
+        myTextInput.becomeFirstResponder() // 鍵盤出現
+        myTextInput.text = messageFromViewOne // 取得 page1 的值 // 利用optional屬性，將值傳給 UI元件。
     }
     
 

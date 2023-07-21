@@ -13,8 +13,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         myLabel.text = "First View"
+        
+        if let secondViewController = self.tabBarController?.viewControllers?[1] as? NewViewController {
+            // secondViewController.myTextInput.text = "Hi" // Err, 此時 secondViewController 因為還沒有點選，所以還未產生 UI元件，無法存入。
+            secondViewController.messageFromViewOne = "Hi" // 利用 optional屬性，secondViewController 產生實體的時候，就會存入
+        }
     }
 
 
