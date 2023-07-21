@@ -13,6 +13,7 @@
 		1A05035F2A6A730B00840D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A05035D2A6A730B00840D2A /* Main.storyboard */; };
 		1A0503612A6A730E00840D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0503602A6A730E00840D2A /* Assets.xcassets */; };
 		1A0503642A6A730E00840D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0503622A6A730E00840D2A /* LaunchScreen.storyboard */; };
+		1A05036C2A6A75F000840D2A /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05036B2A6A75F000840D2A /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1A0503602A6A730E00840D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A0503632A6A730E00840D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A0503652A6A730E00840D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A05036B2A6A75F000840D2A /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1A0503602A6A730E00840D2A /* Assets.xcassets */,
 				1A0503622A6A730E00840D2A /* LaunchScreen.storyboard */,
 				1A0503652A6A730E00840D2A /* Info.plist */,
+				1A05036B2A6A75F000840D2A /* NewViewController.swift */,
 			);
 			path = iOS_HelloTabBarAgain;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				1A05035C2A6A730B00840D2A /* ViewController.swift in Sources */,
 				1A0503582A6A730B00840D2A /* AppDelegate.swift in Sources */,
 				1A05035A2A6A730B00840D2A /* SceneDelegate.swift in Sources */,
+				1A05036C2A6A75F000840D2A /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
