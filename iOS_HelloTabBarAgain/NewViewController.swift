@@ -31,8 +31,13 @@ class NewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myTextInput.becomeFirstResponder() // 鍵盤出現
         myTextInput.text = messageFromViewOne // 取得 page1 的值 // 利用optional屬性，將值傳給 UI元件。
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        // 每次畫面出現時
+        super.viewDidAppear(animated)
+        myTextInput.becomeFirstResponder() // 鍵盤出現
     }
     
 
